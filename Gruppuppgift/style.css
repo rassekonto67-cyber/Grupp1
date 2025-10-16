@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+}
+nav #menu-toggle {
+  display: none;
+}
+nav .menu-icon {
+  display: block;
+  font-size: 1.8rem;
+}
+nav .menu {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  background-color: rgb(223, 162, 190);
+  width: 150px;
+  position: relative;
+  z-index: 10;
+}
+nav #menu-toggle:checked + .menu-icon + .menu {
+  display: flex;
+}
+nav .menu a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
