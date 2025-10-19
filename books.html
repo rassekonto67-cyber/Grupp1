@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bokrecensioner - läsvärda böcker med recensioner och tips</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <header></header>
+
+    <main
+      class="flex flex-wrap justify-center gap-8 p-4 max-w-screen-xl mx-auto transition-all duration-500 ease-in-out"
+    >
+      <!-- Responsivitet, padding och mellanrum, mjuk övergång mellan skärmstorlekar, Tailwind, flexbox-->
+
+      <section class="container-book">
+        <!-- Container för att bestämma utrymmet (och styling) för varje bok -->
+        <article class="container-cover">
+          <a
+            href="https://www.bokus.com/bok/9789113100364/viton-den-fristaende-fortsattningen-pa-expeditionen/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              alt="Bokomslag med en satellitbild över Vitön och en gul pil med titel och författare."
+              src="https://image.bokus.com/images/9789113100364_383x_viton-den-fristaende-fortsattningen-pa-expeditionen"
+              title="Vitön - Bea Uusma"
+              class="book-cover"
+            />
+            <!-- Container med mixin för styling av bild på bokomslag  -->
+          </a>
+        </article>
+
+        <article>
+          <h2>Vitön</h2>
+          <h3>Författare: Bea Uusma</h3>
+        </article>
+
+        <article class="container-review">
+          <!-- Container för att bestämma styling på recensioner.-->
+          <p>
+            I mer än tre decennier har Bea Uusma försökt lösa
+            Andréeexpeditionens gåta. Varför dog de på Vitön 1897, trots varma
+            kläder och rikligt med proviant, innan de ens hunnit packa upp sina
+            slädar?
+            <br />
+            <br />
+            Vitön tar oss längst ut i det som fortfarande är okänt, och längst
+            in i en människa som aldrig kan sluta söka efter sanningen.
+          </p>
+        </article>
+        <br />
+      </section>
+
+      <section class="container-book">
+        <article class="container-cover">
+          <a
+            href="https://www.bokus.com/bok/9789100184704/normala-manniskor/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              alt="Ett bokomslag med ett par som kramas i en halvöppnad sardinburk"
+              src="https://image.bokus.com/images/9789100184704_383x_normala-manniskor_pocket"
+              title="Normala människor - Sally Rooney"
+              class="book-cover"
+            />
+          </a>
+        </article>
+
+        <article>
+          <h2>Normala människor</h2>
+          <h3>Författare: Sally Rooney</h3>
+        </article>
+
+        <article class="container-review">
+          <p>
+            Connell och Marianne växer upp i samma småstad. Han är en populär
+            fotbollskille, hon rik men ensam. De börjar prata, snart ligger de
+            med varandra, kort därefter gör de slut. Så fortsätter det, hela
+            vägen till universitetet i Dublin. Där är rollerna plötsligt
+            omvända: Marianne omges av människor som vill vara henne nära medan
+            Connell sluter sig inåt. Rooney skildrar livet som det levs just nu.
+            "Normala människor" är en roman om kärlek, klass och makt, och om
+            hur en person kan förändra en annan människas liv.
+          </p>
+        </article>
+      </section>
+
+      <section class="container-book">
+        <article class="container-cover">
+          <a
+            href="https://www.bokus.com/bok/9789198618249/let-it-go-8-nycklar-till-frihet-framgang-och-flow/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              alt="Bokomslag med en färgstark rosa bakgrund som tonar över i gult."
+              src="https://image.bokus.com/images/B000421826_383x_signerad-let-it-go-8-nycklar-till-frihet-framgang-och-flow"
+              title="Let it go: 8 nycklar till frihet, framgång och flow - Carina Sunding"
+              class="book-cover"
+            />
+          </a>
+        </article>
+        <article>
+          <h2>Let it go: 8 nycklar till frihet, framgång & flow</h2>
+          <h3>Författare: Carina Sunding</h3>
+        </article>
+        <article class="container-review">
+          <p>
+            Let it go är boken för dig som vet att du har mer att ge och som är
+            redo att lämna rädslor, perfektion, övertänkande och Jantelagen
+            bakom dig - och i stället börja leva livet mer som du vill ha det.
+            Du får övningar, verktyg och smarta sätt att tänka som hjälper dig
+            att manifestera, attrahera och skapa mer av det du längtar efter -
+            och som ger dig modet och metoderna att våga ta för dig av alla
+            möjligheter som redan finns där (även om du inte ser dem - än!)
+          </p>
+        </article>
+      </section>
+
+      <section class="container-book">
+        <article class="container-cover">
+          <a
+            href="https://www.bokus.com/bok/9789113143804/mina-vanner/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              alt="Bokomslag som är tagen under vattenytan där man ser tre män i en cirkel i vattnet."
+              src="https://image.bokus.com/images/9789113143804_383x_mina-vanner"
+              title="Mina vänner - Fredrik Backman"
+              class="book-cover"
+            />
+          </a>
+        </article>
+        <article>
+          <h2>Mina vänner</h2>
+          <h3>Författare: Fredrik Backman</h3>
+        </article>
+        <article class="container-review">
+          <p>
+            De flesta lägger knappt märke till dem - tre små gestalter som
+            sitter på en pir på en av världens mest kända målningar. De flesta
+            som beundrar tavlan ser bara piren och havet, men Louisa, en ensam
+            strulig artonåring, blir alldeles betagen och beslutar sig för att
+            ta reda på historien om dessa tre gåtfulla figurer. Efter en rad
+            osannolika händelser kommer Louisa över den världsberömda tavlan.
+            Hon ger sig ut på en resa tvärs genom landet för att förstå hur
+            målningen kom till och för att bestämma vad hon ska göra med den. Ju
+            närmare hon kommer målningens ursprung, desto mer nervös blir hon
+            för vad hon kan upptäcka.
+          </p>
+        </article>
+      </section>
+
+      <section class="container-book">
+        <article class="container-cover">
+          <a
+            href="https://www.bokus.com/bok/9789100199906/den-yttersta-hemligheten/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              alt="Rött bokomslag där man ser ett halvt svart nyckelhåll på vänstra sidan. Det strålar ut från nyckelhålet."
+              src="https://image.bokus.com/images/9789100199906_383x_den-yttersta-hemligheten"
+              title="Den yttersta hemligheten - Dan Brown"
+              class="book-cover"
+            />
+          </a>
+        </article>
+        <article>
+          <h2>Den yttersta hemligheten</h2>
+          <h3>Författare: Dan Brown</h3>
+        </article>
+        <article class="container-review">
+          <p>
+            Den välrenommerade symbolikprofessorn Robert Langdon reser till Prag
+            för att lyssna till en föreläsning av Katherine Solomon, en
+            framstående forskare i noetisk vetenskap som Langdon nyligen inlett
+            ett förhållande med. Katherine är på väg att ge ut en banbrytande
+            bok om det mänskliga medvetandet, som hotar att vända upp och ned på
+            århundraden av etablerad kunskap. Men ett brutalt mord får resan att
+            ta en kaotisk vändning, och plötsligt är både Katherine och
+            manuskriptet försvunna.
+          </p>
+        </article>
+      </section>
+
+      <section class="container-book">
+        <article class="container-cover">
+          <a
+            href="https://www.bokus.com/bok/9789181015164/breven-jag-aldrig-skickade/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              alt="Vitt bokomslag med texten jag aldrig skickade skrivna med svarta versaler."
+              src="https://image.bokus.com/images/9789181015164_383x_breven-jag-aldrig-skickade_haftad"
+              title="Breven jag aldrig skickade - Jasmine Walter"
+              class="book-cover"
+            />
+          </a>
+        </article>
+        <article>
+          <h2>Breven jag aldrig skickade</h2>
+          <h3>Författare: Jasmine Walter</h3>
+        </article>
+        <article class="container-review">
+          <p>
+            Jasmine Walter bjuder oss in i en värld av känslor och reflektioner
+            genom sin debutdiktsamling Breven jag aldrig skickade. Med ett språk
+            som balanserar på en tunn lina mellan det subtilt poetiska och det
+            hjärtligt ärliga, utforskar hon djupet av mänskliga relationer och
+            den tysta sorgen i det osagda. Samlingens huvudtema kretsar kring de
+            oskickade breven - symboler för de känslor och tankar vi ofta bär på
+            men aldrig uttrycker. Genom sin unga men skarpa röst väver Walter en
+            berättelse om kärlek och förlust, där varje dikt fungerar som en
+            blick in i en värld där orden aldrig riktigt når fram, men där
+            läsaren hittar ett hem.
+          </p>
+        </article>
+      </section>
+
+      <section class="container-book">
+        <article class="container-cover">
+          <a
+            href="https://www.bokus.com/bok/9789179654474/polismannens-tarar//"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              alt="Bokomslag med en svart-vit bild på författarens allvarliga ansikte."
+              src="https://image.bokus.com/images/9789179654474_200x_polismannens-tarar"
+              title="Polismannens tårar - Jale Poljarevius"
+              class="book-cover"
+            />
+          </a>
+        </article>
+        <article>
+          <h2>Polismannens tårar</h2>
+          <h3>Författare: Jale Poljarevius</h3>
+        </article>
+        <article class="container-review">
+          <p>
+            Polismannens tårar är Jale Poljarevius ofiltrerade självbiografi.
+            Det är en berättelse om en polis som aldrig tittar bort - och efter
+            mer än 30 år i kåren har han sett allt.
+            <br />
+            Från de första patrullstegen i Stockholms tunnelbana till rollen som
+            polismästare och underrättelsechef har han upplevt gängkrig,
+            skjutningar och sprängningar på nära håll. Han har sett våldet
+            blivit grövre, de kriminella nätverken mer organiserade och
+            gränserna mer flytande.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

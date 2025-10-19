@@ -1,0 +1,70 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+.container-book {
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 350px; /* Responsivitet, maxbredd för större skärmar */
+  background-color: #f9f9f9;
+  border: 1px solid rgb(228, 228, 202);
+  border-radius: 10px; /* Rundande hörn */
+  transition: all 0.3s ease-in-out; /* Mjuk övergång mellan skärmstorlekar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container-cover {
+  display: flex;
+  justify-content: center;
+}
+
+.book-cover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.252);
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.book-cover:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.container-review {
+  margin-top: 10px;
+  padding: 10px;
+  border-top: 1px solid #e0e0e0;
+}
+
+p {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #555555;
+}/*# sourceMappingURL=style.css.map */
