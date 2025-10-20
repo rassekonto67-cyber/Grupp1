@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  flex-direction: row;
+  margin: 20 auto;
+  padding: 50;
+}
+/* mycket css behövs städas upp */
+
+body {
+  /* ph */
+  background-color: rgb(226, 226, 226);
+}
+
+.about-section {
+  border-radius: 4px;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px;
+  width: 100%;
+  background-color:#ccb39b;
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left  
+}
+.aboutimg {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+h2 {
+    /* ph */
+    text-align: center;
+    color: rgb(121, 35, 13);
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+p {
+    /* ph */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact {
+  border-radius: 4px;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px;
+  width: 40%;
+  height: auto;
+  background-color:#ccb39b;
+  display: flex;
+  text-align: center;
+  overflow-wrap: break-word;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contactimg {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  width: 60%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+}
+
+fieldset {
+    display: flex;
+    background-color: #ccb39b;
+    border-radius: 4px;
+    max-width:450px;
+    flex-direction: column;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* har en liten border runt som jag ej har kunnat fixa bort */
+}
+
+fieldset input{
+    display: flex;
+    border-radius: 10px;
+    width: 450px;
+    height: 3em;  
+    margin: 0.5em 0;
+    padding: 0.4em 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#message{
+    display: flex;
+    border-radius: 10px;
+    padding: 0.4em 1.2em;
+}
+.button{
+    display: flex;
+    border: 1px solid black;
+    background-color: #486994;
+    color: white;
+    padding: 1em 2em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    margin:auto;
+}
+
+.button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
