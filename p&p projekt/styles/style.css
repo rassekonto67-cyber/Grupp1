@@ -1,0 +1,15 @@
+body {
+  background-color: rgb(207, 203, 203);
+}
+
+p {
+  color: rgb(39, 39, 39);
+  margin-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-section {
+  background-color: #ccb39b;
+}
+
+/*# sourceMappingURL=style.css.map */

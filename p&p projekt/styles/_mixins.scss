@@ -1,6 +1,9 @@
 @use "variables";
 
-@mixin p-text($color, $margin-bottom) {
+
+
+
+@mixin p-text($color, $margin-bottom, $p-font) {
   color: $color;
   margin-bottom: $margin-bottom;
   font-family: variables.$p-font;
