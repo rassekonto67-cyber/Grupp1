@@ -1,8 +1,27 @@
 @use "variables" as *;
 @use "mixins" as *;
+$primary-color: #ccb39b;
+$background-color: rgb(207, 203, 203); 
+$p-color: rgb(39, 39, 39);
+$p-margin-bottom: 1rem;
+$p-font: Arial, Helvetica, sans-serif;
 
+
+
+
+
+body {
+    background-color: $background-color;
+}
 
 p {
-  @include p-text($p-color, $p-margin-bottom);
+  @include p-text($p-color, $p-margin-bottom, $p-font);
 }
+
+article {
+    background-color: $primary-color;
+}
+
+
+
 
