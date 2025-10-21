@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background: white;
+    padding-left: 5%;
+    height: 10%;
+    
+}
+img{
+    height: 100px;
+    width: 100px;
+
+}
+footer {
+    background-color: white;
+    height: 10%;
+
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    background-color: bisque;
+}
