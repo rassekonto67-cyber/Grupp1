@@ -1,0 +1,8 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+
+p {
+  @include p-text($p-color, $p-margin-bottom);
+}
+
