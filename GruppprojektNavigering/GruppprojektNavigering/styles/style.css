@@ -1,0 +1,303 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: ivory;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 1.5rem;
+  height: 15%;
+}
+
+.imglogo {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 120px;
+  width: 120px;
+  z-index: 7;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Sökfältet */
+.search-bar {
+  display: none;
+  position: absolute;
+  align-items: center;
+  width: 50%;
+  padding: 10px 14px;
+  background-color: #dbd7c4;
+  border-radius: 20px;
+}
+.search-bar .search-icon {
+  margin-right: 8px;
+  color: #888;
+  font-size: 18px;
+}
+.search-bar .search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 15px;
+}
+.search-bar .search-input::placeholder {
+  color: #2d2d2d;
+}
+
+nav {
+  margin-top: 6rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 2rem;
+}
+@media screen and (min-width: 767px) {
+  nav header {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+nav #menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+nav .menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 8;
+}
+nav {
+  /* Menyn för mobil och desktop (hamburgarmeny) */
+}
+nav .menu {
+  top: 0;
+  left: 0;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  background-color: ivory;
+  width: 400px;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+}
+nav {
+  /* Menyn för desktop, visas endast om skärmen är bredare än 768px */
+}
+nav .nav-desktop-menu {
+  display: flex;
+  flex-direction: row;
+  background: transparent;
+  width: 100%;
+  gap: 4px;
+}
+nav .nav-desktop-menu a {
+  display: block;
+  font-size: 15px;
+  padding: 15px 20px;
+  padding-top: 20px;
+  color: rgb(31, 31, 31);
+  text-decoration: none;
+}
+nav .nav-desktop-menu a:hover {
+  color: rgb(139, 0, 0);
+}
+nav .nav-desktop-menu li {
+  list-style: none;
+}
+nav {
+  /* Visa menyn när "checkboxen" är ikryssad */
+}
+nav #menu-toggle:checked + .menu-icon + .menu {
+  display: flex;
+}
+nav .menu a {
+  display: flex;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-bottom: 0.75rem;
+  color: rgb(31, 31, 31);
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .menu a:hover {
+  background-color: rgb(203, 134, 199);
+  color: white;
+}
+nav {
+  /* Rubrik i menyn (h2)*/
+}
+nav .menu h2 {
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  padding-top: 20px;
+  color: rgb(31, 31, 31);
+}
+nav {
+  /* Stäng "knappen" (ikon) i menyn */
+}
+nav .close-icon {
+  display: flex;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 8px 10px 8px 10px;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+nav {
+  /* :hover effekt på stäng ikonen */
+}
+nav .close-icon:hover {
+  background-color: rgb(99, 19, 19);
+  color: white;
+  border-radius: 8px;
+}
+nav {
+  /* Dölj desktopmenyn (länkar) när skärmen är smalare än 768px */
+}
+@media screen and (max-width: 767px) {
+  nav .nav-desktop-menu {
+    display: none;
+  }
+}
+nav {
+  /* Skugga bakom hamburgarmenyn när den är öppen */
+}
+nav .shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 5;
+  cursor: pointer;
+}
+nav {
+  /* Visa skuggan när menyn är "checked" alltså man har klickat på hamburgarloggan*/
+}
+nav #menu-toggle:checked ~ .shadow {
+  opacity: 1;
+  visibility: visible;
+}
+
+main {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: rgb(51, 51, 51);
+  height: 100vh;
+  color: black;
+}
+
+/* Footer meny (nav) för mobil */
+.footer-menu-section {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 20px;
+}
+
+/* Styling the summary, which is the clickable title */
+summary {
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling for the content inside the accordion */
+details ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+details li {
+  padding: 5px 0;
+}
+
+details a {
+  text-decoration: none;
+  color: #555;
+  display: block;
+}
+
+details a:hover {
+  color: rgb(223, 162, 190);
+}
+
+@media screen and (min-width: 767px) {
+  .footer-menu-section {
+    display: none;
+  }
+}
+/* Footer meny (nav) för desktop */
+.footer-desktop-column {
+  display: flex; /* Arranges the columns side by side */
+  justify-content: center; /* Centers the columns within the footer */
+  gap: 50px;
+}
+.footer-desktop-column .footer-desktop-column h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.footer-desktop-column .footer-desktop-one, .footer-desktop-column .footer-desktop-two {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-decoration: none;
+}
+.footer-desktop-column .footer-desktop-one li, .footer-desktop-column .footer-desktop-two li {
+  margin: 10px;
+}
+.footer-desktop-column .footer-desktop-one a, .footer-desktop-column .footer-desktop-two a {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+}
+.footer-desktop-column .footer-desktop-one a:hover, .footer-desktop-column .footer-desktop-two a:hover {
+  color: rgb(223, 162, 190);
+}
+@media screen and (max-width: 767px) {
+  .footer-desktop-column .footer-desktop-one, .footer-desktop-column .footer-desktop-two {
+    display: none;
+  }
+}
+
+.footer-copyright {
+  background-color: white;
+  height: 15%;
+}
+
+.footer-copyright h3 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */
