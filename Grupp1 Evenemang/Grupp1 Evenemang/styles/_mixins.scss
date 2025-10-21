@@ -1,0 +1,5 @@
+@mixin p-text($color, $margin-bottom) {
+  color: $color;
+  margin-bottom: $margin-bottom;
+  font-family: variables.$p-font;
+}
