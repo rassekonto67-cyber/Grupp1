@@ -18,10 +18,9 @@ p {
   @include p-text($p-color, $p-margin-bottom, $p-font);
 }
 
-article {
+.box-section {
     background-color: $primary-color;
 }
-
 
 
 
