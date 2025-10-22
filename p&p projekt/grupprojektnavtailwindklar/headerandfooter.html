@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Navigation Tailwind</title>
+</head>
+<body>
+
+
+  <header class="bg-gray-100 border-b border-gray-300 border-b-4 border-red-900">
+    <nav class="max-w-screen-xl mx-auto p-4 flex flex-col items-center justify-center">
+        <!-- Logotyp -->
+        <section class="flex items-center space-x-4">
+        <a href="#" class="flex justify-center items-center">
+            <img src="logotypgrupprojekt.png" alt="Logotyp för webbsidan" class="h-42 mb-4">
+          </a>
+        </section>
+<!-- Navigeringsmeny för desktop -->
+        <ul class="hidden md:flex md:space-x-8
+      peer-checked:flex peer-checked:flex-col peer-checked:space-y-4 peer-checked:items-center">
+      <li><a href="index" class="text-gray-900 hover:text-red-700">Hem</a></li>
+      <li><a href="books" class="text-gray-900 hover:text-red-700">Bokrecensioner</a></li>
+      <li><a href="event" class="text-gray-900 hover:text-red-700">Evenemang</a></li>
+      <li><a href="about" class="text-gray-900 hover:text-red-700">Om oss</a></li>
+    </ul>
+    <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+    <label for="menu-toggle" class="cursor-pointer md:hidden block">
+      <svg class="h-8 w-8 text-gray-900 hover:text-gray-800 dark:hover:text-red-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </label>
+
+    <!-- Mobilmenyn (visas när checkboxen är ikryssad) -->
+<section class="
+      absolute top-0 left-0 right-0 z-10 
+      hidden peer-checked:block 
+      bg-white z-40
+    ">
+
+<!-- hamburgarmeny för mobilmenyn -->
+<label for="menu-toggle" class="absolute top-4 right-4 p-1 cursor-pointer text-gray-900 hover:bg-red-900 hover:text-white rounded-lg">stäng ✕</label>
+      <section class="p-4">
+        <h2 class="text-lg font-bold mb-4">Sök bland våra tjänster</h2>
+        <ul>
+          <li><a href="index" class="block py-2 text-gray-900 hover:text-red-700">Hem <span>›</span></a></li>
+          <li><a href="books" class="block py-2 text-gray-900 hover:text-red-700">Bokrecensioner <span>›</span></a></li>
+          <li><a href="event" class="block py-2 text-gray-900 hover:text-red-700">Evenemang <span>›</span></a></li>
+          <li><a href="about" class="block py-2 text-gray-900 hover:text-red-700">Om oss <span>›</span></a></li>
+        </ul>
+      </section>
+    </section>
+
+    <!-- Halvtransparent bakgrund för mobilmenyn -->
+    <section class="fixed inset-0 bg-gray-900/30 z-30 hidden peer-checked:block md:hidden"></section>
+  </header>
+</nav>
+
+
+
+
+<main class="flex-1 flex flex-col items-center justify-center p-4 space-y-6">
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl"></section>
+
+<article class="box-section rounded-2xl shadow-lg p-6 text-center flex flex-col justify-start w-full mx-auto my-4">
+  <h2 class="text-4xl font-bold text-[#8B0000] mb-4">
+    Välkommen in till oss!<br>
+    Din personliga mötesplats för litteratur och nya upplevelser!
+  </h2>
+  <p>
+    Hos oss handlar det om mer än bara böcker, det handlar om berättelser, möten och inspiration.
+    Här hittar du de senaste boknyheterna som vi handplockat, samt en översikt över alla spännande evenemang vi arrangerar i våra lokaler.
+    Utforska vårt sortiment, anmäl dig till nästa författarkväll och bli en del av vår gemenskap. Vi ser fram emot att träffa dig!
+  </p>
+</article>
+
+
+                                <!-- Box 2 (text+bild) -->
+<article class="box-section rounded-2xl shadow-lg p-6 text-center flex flex-col justify-start w-full max-w-[1000px]  mx-auto my-4">
+        <h2 class="text-4xl font-bold text-[#8B0000] mb-4">Veckans boknyhet!</h2>
+        
+        <img 
+        src="https://bilder.akademibokhandeln.se/images_akb/9789189750166_383" 
+        alt="Bild på en bok som anses vara veckans nyhet." 
+        class= "mx-auto mb-3 rounded-lg shadow-2xl transition duration-300 hover:scale-105 hover:rotate-1">
+
+        <h3 class="text-2xl font-bold">Katarina Wennstam</h3>
+        <p>Tredje delen i Sekelskiftesmorden.<br>
+        Fyra kvinnor för alltid sammansvurna av en mörk hemlighet i sekelskiftets Stockholm.  
+        I ett snöbeklätt Stockholm i december 1897, pulsar Fredrika mot sin nyöppnade detektivbyrå på Södermalm. 
+        Edit har lämnat ett tungt år bakom sig, och fått en nystart som retuschös i en fotoateljé. 
+        Hela staden förbereder sig inför den stundande julen.    
+        Men Lucianatten är kall och hård trots alla tända ljus. 
+        När en ung kvinna från Dalarna, inrest till huvudstaden för att arbeta, försvinner spårlöst blir det en kamp mot klockan för att finna henne. 
+        Fredrika och de andra kvinnorna på Krukmakargatan anar att det ligger mer bakom försvinnandet än detektivkonstaplarna tror. 
+        Sökandet efter den försvunna dalkullan leder dem till mörka hemligheter, brustna löften och ond bråd död.  </p>
+      </article>
+                    <!-- Box 3. ( 4st bilder på böcker med text under. ) -->
+<article class="box-section rounded-2xl shadow-lg p-6 text-center flex flex-col justify-start w-full max-w-[1000px] min-h-[400px] mx-auto my-4">
+  <h2 class="text-4xl font-bold text-[#8B0000] mb-8">Nyheter</h2>
+
+  <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" role="list">
+    
+    <article role="småböcker">
+      <figure class="flex flex-col items-center">
+        <img 
+          src="https://image.bokus.com/images/9789137509495_200x_i-huvudet-pa-kina" 
+          alt="I huvudet på Kina av Fredrik Önnevall" 
+          class="w-40 h-56 object-cover rounded-lg shadow-xl mb-3 transition-transform duration-300 ease-in-out hover:scale-125">
+
+        <figcaption> <!-- Använder figcaption som jag lärde mig via internet för att beskriva boken. -->
+          <h3 class="text-lg font-semibold">I huvudet på Kina</h3>
+          <p class="text-sm italic">Fredrik Önnevall</p>
+        </figcaption>
+      </figure>
+    </article>
+
+    <article role="småböcker">
+      <figure class="flex flex-col items-center">
+        <img 
+          src="https://image.bokus.com/images/9789113142739_200x_major-virvelvind" 
+          alt="Major Virvelvind av Nina Wähä" 
+          class="w-40 h-56 object-cover rounded-lg shadow-xl mb-3 transition-transform duration-300 ease-in-out hover:scale-125">
+        <figcaption>
+          <h3 class="text-lg font-semibold">Major Virvelvind</h3>
+          <p class="text-sm italic">Nina Wähä</p>
+        </figcaption>
+      </figure>
+    </article>
+
+    <article role="småböcker">
+      <figure class="flex flex-col items-center">
+        <img 
+          src="https://image.bokus.com/images/9789146242246_200x_eurydikes-natt" 
+          alt="Eurydikes natt av Elin Cullhed" 
+          class="w-40 h-56 object-cover rounded-lg shadow-xl mb-3 transition-transform duration-300 ease-in-out hover:scale-125">
+        <figcaption>
+          <h3 class="text-lg font-semibold">Eurydikes natt</h3>
+          <p class="text-sm italic">Elin Cullhed</p>
+        </figcaption>
+      </figure>
+    </article>
+
+    <article role="småböcker">
+      <figure class="flex flex-col items-center">
+        <img 
+          src="https://image.bokus.com/images/9789100801205_200x_17-juni" 
+          alt="17 juni av Karen M. McManus" 
+          class="w-40 h-56 object-cover rounded-lg shadow-xl mb-3 transition-transform duration-300 ease-in-out hover:scale-125">
+        <figcaption>
+          <h3 class="text-lg font-semibold">17 juni</h3>
+          <p class="text-sm italic">Alex Schulman</p>
+        </figcaption>
+      </figure>
+    </article>
+
+  </section>
+</article>
+  </main>
+
+
+
+
+
+<footer class="bg-gray-100 text-gray-900">
+  <section class="container mx-auto px-4 py-8">
+    <!-- Navigering för mobil (syns endast på mindre skärmar) -->
+    <section class="md:hidden">
+      <section class="mb-6">
+        <details class="group">
+          <summary class="flex items-center justify-between p-2 cursor-pointer font-bold text-black">
+            <h2 class="text-lg font-semibold">Pärmar & Poesi</h2>
+            <span>⇅</span>
+          </summary>
+          <ul class="mt-2 space-y-1">
+            <li><a href="index" class="block p-2 hover:text-red-700">Hem</a></li>
+            <li><a href="books" class="block p-2 hover:text-red-700">Bokrecensioner</a></li>
+            <li><a href="event" class="block p-2 hover:text-red-700">Evenemang</a></li>
+            <li><a href="about" class="block p-2 hover:text-red-700">Boktips</a></li>
+          </ul>
+        </details>
+      </section>
+
+      <section>
+        <details class="group">
+          <summary class="flex items-center justify-between p-2 cursor-pointer font-bold text-black">
+           <h2 class="text-lg font-semibold">Information</h2>
+            <span>⇅</span>
+          </summary>
+          <ul class="mt-2 space-y-1">
+            <li><a href="#" class="block p-2 hover:text-red-700">Om oss</a></li>
+          </ul>
+        </details>
+      </section>
+    </section>
+
+    <!-- Navigering för desktop (dold på små skärmar, använder grid på desktop) -->
+    <section class="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+      <section>
+        <h2 class="text-black font-bold mb-4">Pärmar & Poesi</h2>
+        <ul class="space-y-2">
+          <li><a href="index" class="hover:text-red-700">Hem</a></li>
+          <li><a href="books" class="hover:text-red-700">Bokrecensioner</a></li>
+          <li><a href="event" class="hover:text-red-700">Evenemang</a></li>
+          <li><a href="about" class="hover:text-red-700">Om oss</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="text-black font-bold mb-4">Information</h2>
+        <ul class="space-y-2">
+          <li><a href="about" class="hover:text-red-700">Om oss</a></li>
+        </ul>
+      </section>
+    </section>
+  </section>
+
+  <!-- Copyright -->
+  <section class="bg-red-900 text-center py-4 text-gray-200 text-sm">
+    <h3>&copy; Copyright 1997-2025 Pärmar & Poesi AB</h3>
+  </section>
+</footer>
+
+</body>
+</html>
