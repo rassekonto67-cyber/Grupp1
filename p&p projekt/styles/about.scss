@@ -15,9 +15,8 @@ p {
   @include p-text($p-color, $p-margin-bottom);
 }
 
-section {
-    background-color: $primary-color;
-    max-width: 1000px;
+.header {
+    background-color: rgba(207, 203, 203, 0);
 } 
 
 * {
@@ -41,7 +40,8 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
   align-items: center;  
-  
+  background-color: $primary-color;
+  max-width: 1000px;
 }
 .aboutimg {
   width: 80%;
@@ -75,6 +75,7 @@ h2{
   width: 350px;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: $primary-color;
 }
 fieldset {
     align-items: center;
