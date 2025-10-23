@@ -13,21 +13,21 @@
 <body>
 
       <header class="bg-gray-100 border-b border-gray-300 border-b-4 border-red-900">
-    <nav class="max-w-screen-xl mx-auto p-4 flex flex-col items-center justify-center">
+    <nav class="max-w-screen-xl mx-auto p-2 flex flex-col items-center justify-center">
         <!-- Logotyp -->
         <section class="flex items-center space-x-4">
         <a href="#" class="flex justify-center items-center">
-            <img src="logotypgrupprojekt.png" alt="Logotyp för webbsidan" class="h-60 mb-4">
+            <img src="logotypgrupprojekt.png" alt="Pärmar & Poesi -  en bokhandel med en oval logotyp i vinrött, rosa och vitt. Logotypen har en vinröd ytterkant med vit inre ram och en rosa oval bakgrund bakom en vit igenfylld öppen bok." class="h-42 mb-2">
           </a>
         </section>
 <!-- Navigeringsmeny för desktop -->
         <!--<ul class="hidden md:flex md:space-x-8
       peer-checked:flex peer-checked:flex-col peer-checked:space-y-4 peer-checked:items-center">-->
       <ul class="hidden md:flex gap-10 peer-checked:flex peer-checked:flex-col peer-checked:gap-4 peer-checked:items-center">
-      <li><a href="index" class="text-gray-900 hover:text-red-700">Hem</a></li>
-      <li><a href="books" class="text-gray-900 hover:text-red-700">Bokrecensioner</a></li>
-      <li><a href="event" class="text-gray-900 hover:text-red-700">Evenemang</a></li>
-      <li><a href="about" class="text-gray-900 hover:text-red-700">Om oss</a></li>
+      <li><a href="index.html" class="text-gray-900 hover:text-red-700">Hem</a></li>
+      <li><a href="books.html" class="text-gray-900 hover:text-red-700">Bokrecensioner</a></li>
+      <li><a href="event.html" class="text-gray-900 hover:text-red-700">Evenemang</a></li>
+      <li><a href="about.html" class="text-gray-900 hover:text-red-700">Om oss</a></li>
     </ul>
     <input type="checkbox" id="menu-toggle" class="peer hidden">
 
@@ -49,10 +49,10 @@
       <section class="p-4">
         <h2 class="text-lg font-bold mb-4">Sök bland våra tjänster</h2>
         <ul>
-          <li><a href="index" class="block py-2 text-gray-900 hover:text-red-700">Hem <span>›</span></a></li>
-          <li><a href="books" class="block py-2 text-gray-900 hover:text-red-700">Bokrecensioner <span>›</span></a></li>
-          <li><a href="event" class="block py-2 text-gray-900 hover:text-red-700">Evenemang <span>›</span></a></li>
-          <li><a href="about" class="block py-2 text-gray-900 hover:text-red-700">Om oss <span>›</span></a></li>
+          <li><a href="index.html" class="block py-2 text-gray-900 hover:text-red-700">Hem <span>›</span></a></li>
+          <li><a href="books.html" class="block py-2 text-gray-900 hover:text-red-700">Bokrecensioner <span>›</span></a></li>
+          <li><a href="event.html" class="block py-2 text-gray-900 hover:text-red-700">Evenemang <span>›</span></a></li>
+          <li><a href="about.html" class="block py-2 text-gray-900 hover:text-red-700">Om oss <span>›</span></a></li>
         </ul>
       </section>
     </section>
@@ -64,59 +64,61 @@
 </nav>
    
    <main>
+     <!-- Huvudsektionen för evenemangssidan -->
     <section class="evenemang-container">
+      <!-- Artikel 1: Uppläsning av Gustaf Fröding -->
     <article class="evenemang-box">
-        <img src="assets/alvaro-serrano-hjwKMkehBco-unsplash.jpg" alt="Scenen avbildar en reservoarpenna som vilar på ett anteckningsblock." class="pic-box">
+        <img src="images/alvaro-serrano-hjwKMkehBco-unsplash.jpg" alt="Scenen avbildar en reservoarpenna som vilar på ett anteckningsblock." class="pic-box">
         <h2 class="text-xl font-bold text-[#8B0000] mb-4">1 November<br>Gustaf Fröding 14:00</h2>
         <p>Uppläsning av hans Mest kända poesier.</p>
     </article>
-
+      <!-- Artikel 2: Bokklubb -->
     <article class="evenemang-box">
-        <img src="assets/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg" alt="Flera stycken öppna böcker som täcker hela rutan." class="pic-box">
+        <img src="images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg" alt="Flera stycken öppna böcker som täcker hela rutan." class="pic-box">
         <h2 class="text-xl font-bold text-[#8B0000] mb-4">5 November Bokklubb 18:30</h2>
         <p>Boken vi läser denna månad är: Fredrik Backman, Mina vänner</p>
     </article>
-
+      <!-- Artikel 3: Författarbesök Camilla Läckberg -->
     <article class="evenemang-box">
-        <img src="assets/antenna-FDV1BaKNKEo-unsplash.jpg" alt="Flera personer som sitter i en mindre föreläsningssal." class="pic-box">
+        <img src="images/antenna-FDV1BaKNKEo-unsplash.jpg" alt="Flera personer som sitter i en mindre föreläsningssal." class="pic-box">
         <h2 class="text-xl font-bold text-[#8B0000] mb-4">9 November<br>Camilla Läckberg 14:00</h2>
         <p>Signering och föreläsning om sina verk.</p>
     </article>
-
+      <!-- Artikel 4: Bokklubb (upprepande evenemang) -->
         <article class="evenemang-box">
-        <img src="assets/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg" alt="Flera stycken öppna böcker som täcker hela rutan." class="pic-box">
+        <img src="images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg" alt="Flera stycken öppna böcker som täcker hela rutan." class="pic-box">
         <h2 class="text-xl font-bold text-[#8B0000] mb-4">12 November Bokklubb 18:30</h2>
         <p>Boken vi läser denna månad är: Fredrik Backman, Mina vänner</p>
     </article>
-
+      <!-- Artikel 5: Open mic-evenemang -->
     <article class="evenemang-box">
-        <img src="assets/panos-sakalakis-63sI4HO30tw-unsplash.jpg" alt="Ett mikrifonstativ i fokus mot en mörk bakrund" class="pic-box">
+        <img src="images/panos-sakalakis-63sI4HO30tw-unsplash.jpg" alt="Ett mikrifonstativ i fokus mot en mörk bakrund" class="pic-box">
         <h2 class="text-xl font-bold text-[#8B0000] mb-4">15 November<br>Open mic 17:00</h2>
         <p>Här kan du anmäla dig för att läsa upp din egen poesi för en 
             mindre publik.
         </p>
     </article>
-
+      <!-- Artikel 6: Bokklubb igen -->
     <article class="evenemang-box">
-        <img src="assets/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg" alt="Flera stycken öppna böcker som täcker hela rutan." class="pic-box">
+        <img src="images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg" alt="Flera stycken öppna böcker som täcker hela rutan." class="pic-box">
         <h2 class="text-xl font-bold text-[#8B0000] mb-4">19 November Bokklubb 18:30</h2>
         <p>Boken vi läser denna månad är: Fredrik Backman, Mina vänner</p>
     </article>
-
+      <!-- Artikel 7: Författarbesök Fredrik Backman -->
     <article class="evenemang-box">
-        <img src="assets/antenna-FDV1BaKNKEo-unsplash.jpg" alt="Flera personer som sitter i en föreläsningssal." class="pic-box">
+        <img src="images/antenna-FDV1BaKNKEo-unsplash.jpg" alt="Flera personer som sitter i en föreläsningssal." class="pic-box">
         <h2 class="text-xl font-bold text-[#8B0000] mb-4">23 November<br>Fredrik Backman 14:00</h2>
         <p>Signering och föreläsning om sina verk.</p>
     </article>
-
+      <!-- Artikel 8: Bokklubb (sista tillfället i månaden) -->
         <article class="evenemang-box">
-        <img src="assets/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg" alt="Flera stycken öppna böcker som täcker hela rutan." class="pic-box">
+        <img src="images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg" alt="Flera stycken öppna böcker som täcker hela rutan." class="pic-box">
         <h2 class="text-xl font-bold text-[#8B0000] mb-4">26 November Bokklubb 18:30</h2>
         <p>Boken vi läser denna månad är: Fredrik Backman, Mina vänner</p>
     </article>
-
+      <!-- Artikel 9: Öppet hus för barn -->
         <article class="evenemang-box">
-        <img src="assets/suad-kamardeen-8PyNdtGL4Bg-unsplash.jpg" alt="Ett barn som står framför en bokhylla för att välja bok." class="pic-box">
+        <img src="images/suad-kamardeen-8PyNdtGL4Bg-unsplash.jpg" alt="Ett barn som står framför en bokhylla för att välja bok." class="pic-box">
         <h2 class="text-xl font-bold text-[#8B0000] mb-4">29 November<br>Öppet hus 14:00</h2>
         <p>För alla barn där vi presenterar de senaste barnböckerna. Det kommer även att vara en bokstund där vi läser upp den nya barnboken Julkalas, Alfons Åberg av Gunilla Bergström.</p>
     </article>
@@ -134,10 +136,10 @@
             <span>⇅</span>
           </summary>
           <ul class="mt-2 space-y-1">
-            <li><a href="index" class="block p-2 hover:text-red-700">Hem</a></li>
-            <li><a href="books" class="block p-2 hover:text-red-700">Bokrecensioner</a></li>
-            <li><a href="event" class="block p-2 hover:text-red-700">Evenemang</a></li>
-            <li><a href="about" class="block p-2 hover:text-red-700">Boktips</a></li>
+            <li><a href="index.html" class="block p-2 hover:text-red-700">Hem</a></li>
+            <li><a href="books.html" class="block p-2 hover:text-red-700">Bokrecensioner</a></li>
+            <li><a href="event.html" class="block p-2 hover:text-red-700">Evenemang</a></li>
+            <li><a href="about.html" class="block p-2 hover:text-red-700">Boktips</a></li>
           </ul>
         </details>
       </section>
@@ -160,10 +162,10 @@
       <section>
         <h2 class="text-black font-bold mb-4">Pärmar & Poesi</h2>
         <ul class="space-y-2">
-          <li><a href="index" class="hover:text-red-700">Hem</a></li>
-          <li><a href="books" class="hover:text-red-700">Bokrecensioner</a></li>
-          <li><a href="event" class="hover:text-red-700">Evenemang</a></li>
-          <li><a href="about" class="hover:text-red-700">Om oss</a></li>
+          <li><a href="index.html" class="hover:text-red-700">Hem</a></li>
+          <li><a href="books.html" class="hover:text-red-700">Bokrecensioner</a></li>
+          <li><a href="event.html" class="hover:text-red-700">Evenemang</a></li>
+          <li><a href="about.html" class="hover:text-red-700">Om oss</a></li>
         </ul>
       </section>
       <!--<section>
