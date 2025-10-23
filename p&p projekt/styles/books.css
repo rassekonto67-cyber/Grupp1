@@ -5,58 +5,6 @@
   padding: 0;
 }
 
-nav {
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
-.menu-container {
-  position: relative;
-  display: inline-block;
-}
-
-.menu-icon {
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-
-.menu {
-  list-style: none;
-  display: none;
-  flex-direction: column;
-  background-color: rgb(223, 162, 190);
-  width: 180px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 10;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/*Visar menyn när man hovrar över hamburgarikonen eller menyn */
-.menu-container:hover .menu {
-  display: flex;
-}
-
-.menu a {
-  display: block;
-  padding: 10px 15px;
-  color: white;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.menu a:hover {
-  background-color: rgb(203, 132, 160);
-}
-
-.nav-desktop-menu {
-  list-style: none;
-  display: none; /* Visa vid större skärmar om du vill */
-}
-
 body {
   background-color: rgb(207, 203, 203);
   justify-items: center;
@@ -95,17 +43,11 @@ body {
   transform: scale(1.05);
 }
 
-h2 {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
 h3 {
   font-size: 1rem;
   margin-top: 5px;
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .container-review {
