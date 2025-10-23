@@ -1,45 +1,50 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Grundinställningar för hela sidan */
 body {
-  background-color: rgb(207, 203, 203);
+  background-color: rgb(207, 203, 203); /* Här sätter jag bakgrundsfärgen med en variabel, så det är lätt att ändra senare */
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 1px; /* Lite extra luft mellan bokstäverna gör texten mer lättläst */
   font-family: Arial, sans-serif;
 }
 
+/* Containern som håller alla evenemangsrutor */
 .evenemang-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  display: grid; /* Jag använder CSS Grid för att få en flexibel och snygg layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Rutorna anpassar sig automatiskt beroende på skärmens bredd */
+  gap: 2rem; /* Lite mellanrum mellan rutorna så de inte sitter ihop */
   padding: 2rem;
   justify-items: center;
-  max-width: 1300px;
-  margin: 0 auto;
+  max-width: 1300px; /* Begränsar bredden så det inte blir för brett på stora skärmar */
+  margin: 0 auto; /* Centrerar hela gridet på sidan */
 }
 
+/* Varje ruta med ett evenemang */
 .evenemang-box {
   background: #ccb39b;
-  width: 300px;
+  width: 300px; /* Gör rutorna lagom stora */
   margin: 2rem auto;
   padding: 1rem;
-  border: 1px solid #8B0000;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid #8B0000; /* Tunn röd kant för att rama in rutorna */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Lägger till lite skugga för djupkänsla */
   border-radius: 12px;
 }
 
+/* När man hovrar över en ruta */
 .evenemang-box:hover {
   cursor: pointer;
-  scale: 1.2;
+  scale: 1.2; /* Gör rutan lite större vid hover – känns mer levande */
 }
 
+/* Anpassar layouten för mindre skärmar, t.ex. mobil */
 @media (max-width: 768px) {
   .evenemang-container {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr; /* Rutorna ligger under varandra istället för bredvid */
   }
 }
 
