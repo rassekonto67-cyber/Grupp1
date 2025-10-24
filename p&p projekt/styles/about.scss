@@ -1,3 +1,4 @@
+/* variablar och mixins för [terkommande styling i olika element*/
 @use "variables" as *;
 @use "mixins" as *;
 $primary-color: #ccb39b;
@@ -14,7 +15,7 @@ body {
 p {
   @include p-text($p-color, $p-margin-bottom);
 }
-
+/* ser till att headerns fär inte överskrivs genom att göra den genomskinlig för elmentet */
 .header {
     background-color: rgba(207, 203, 203, 0);
 } 
@@ -24,12 +25,12 @@ p {
   margin: 0;
   padding: 0;
 }
-
+/* sätter marginal och centererar innhållet på allt som ligger i body */
 body {
   margin: 20px;
   justify-items: center;
 }
-
+/* styling för klassen till om oss elementens section */
 .about-section {
   border-radius: 4px;
   flex-direction: column;
@@ -43,23 +44,27 @@ body {
   background-color: $primary-color;
   max-width: 1000px;
 }
+/* styling för storlek och rundade hörn på bilden som syns i om oss element, har en egen klass
+att ej riskera störa andra elment som använder bilder */
 .aboutimg {
   width: 80%;
   height: 80%;
   border-radius: 6px;
 }
 
+/* övrig h2 styling är genom tailwind i html bara centrera texten som återfinns här*/
 h2{
   text-align: center;
 }
-
+/* styling för klassen på kontankt info sektionen */
 .contact-section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-
+/* styling för bild som senare valdes bort då den känndes onödig för sidan, har låtit koden
+ligga kvar även då den ej används, då den gjorde lite mer än det andra img styling för about us */
 .contactimg {
   display: block;
   margin-left: auto;
@@ -69,6 +74,7 @@ h2{
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+/* styling för sektion klassen som innhåller kontakt formen */
 .form-section{
   padding: 20px;
   margin: 1rem auto;
@@ -77,6 +83,7 @@ h2{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: $primary-color;
 }
+/* styling för själva kontankt formuläret utsende och form*/
 fieldset {
     align-items: center;
     border: none;
@@ -85,7 +92,7 @@ fieldset {
     margin: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* styling för att kontrollera styling på kontaktformulärets input fält */
 fieldset input{
     background-color: #f5e9dc;
     border-radius: 4px;
@@ -95,11 +102,12 @@ fieldset input{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* styling för label för meddelande fältet i kontaktformuläret */
 #message{
     border-radius: 4px;
     background-color: #f5e9dc;
 }
+/* klass som kontrollerar styling på knappen som tillhör kontaktformuläret */
 .button{
     border: 1px solid black;
     background-color: rgb(121, 35, 13);
@@ -108,8 +116,13 @@ fieldset input{
     font-weight: bold;
     font-size: 1em;
 }
-
+/* denna styling kontrolerar vad som händer när man klickar på knappen */
 .button:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+/* ett par överflödiga kod bitar som skulle gå att städa bort, samt omorganisering på några
+kodstycken, men då jag har forsatt tekniska problem med att kompilera i sass så vågar jag
+inte ändra på något i sista minuten och riskera att något går sönder eller skapa problem på
+en i nuläget fult fungerande sida*/
